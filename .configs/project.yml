@@ -37,6 +37,10 @@ targets:
       - path: ../PersonaTalk
     resources:
       - path: ../PersonaTalk/Assets.xcassets
+    preBuildScripts:
+      - name: SwiftLint
+        script: .scripts/swiftlint.sh
+
 schemes:
   PersonaTalk:
     build:

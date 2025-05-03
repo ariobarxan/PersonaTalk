@@ -65,6 +65,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 360C36560BD26F3C13D32C2C /* Build configuration list for PBXNativeTarget "PersonaTalk" */;
 			buildPhases = (
+				70BB01C53C003863A91275AE /* SwiftLint */,
 				9CD70FD4E1D8BAE6E742C9FE /* Sources */,
 				CA629F01288D05B565E9AF27 /* Resources */,
 			);
@@ -120,6 +121,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70BB01C53C003863A91275AE /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = .scripts/swiftlint.sh;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9CD70FD4E1D8BAE6E742C9FE /* Sources */ = {

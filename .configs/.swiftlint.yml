@@ -1,0 +1,49 @@
+included:
+  - PersonaTalk
+excluded:
+  - Pods
+  - Generated
+  - "*/Generated"
+
+disabled_rules:
+  - identifier_name
+  - opening_brace
+
+opt_in_rules:
+  - missing_docs
+
+custom_rules:
+  center_identifier:
+    message: Prefer en-us spelling of center
+    match_kinds:
+      - identifier
+    regex: "Centre|\bcentre"
+    severity: warning
+  date_instantiation:
+    message: Use DateProvider.shared.date() rather than directly instantiating Date objects
+    match_kinds:
+      - identifier
+    regex: "\\bDate\\(\\)"
+    severity: error
+
+cyclomatic_complexity:
+  ignores_case_statements: true
+function_body_length: 80
+file_length: 500
+line_length: 200
+nesting:
+  type_level:
+    warning: 5
+trailing_comma:
+  mandatory_comma: true
+type_body_length: 400
+type_name:
+  max_length:
+    warning: 60
+generic_type_name:
+  max_length:
+    warning: 60
+vertical_whitespace:
+  max_empty_lines: 2
+
+
