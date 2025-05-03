@@ -46,7 +46,8 @@
 				756F97D9A425C81DDBDBE2C9 /* PersonaTalkApp.swift */,
 				B0692646B469C012B7845469 /* Preview Content */,
 			);
-			path = PersonaTalk;
+			name = PersonaTalk;
+			path = ../PersonaTalk;
 			sourceTree = "<group>";
 		};
 		B0692646B469C012B7845469 /* Preview Content */ = {
